@@ -15,8 +15,8 @@ const QrCode = () => {
     setLoading(true);
     try{
       if (qrData && qrSize) {
-        //const url = `https://api.qrserver.com/v1/create-qr-code/?size=${qrSize}x${qrSize}&data=${encodeURIComponent(qrData)}`;
-        //setImg(url);
+        const url = `https://api.qrserver.com/v1/create-qr-code/?size=${qrSize}x${qrSize}&data=${encodeURIComponent(qrData)}`;
+        setImg(url);
         setMsg("QR Code Generated Successfully");
         setBadge("success")
       } else {
